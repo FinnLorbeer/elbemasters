@@ -1,21 +1,22 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head profile="http://dublincore.org/documents/dcq-html/">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Webmaster: Finn Lorbeer. Email: finn.lorbeer@web.de -->
-    <meta name="DC.title" content="Hausarzt Passage - Michael Janßen">
+    <meta name="DC.title" content="Elbemasters Jugendhandballturnier">
     <meta name="DC.creator" content="Finn Lorbeer">
-    <meta name="DC.subject" content="Allgemeinmediziner in Berlin-Neukölln">
-    <meta name="DC.descripion" content="Leistungsangebot und Kontakt des Allgemeinmediziners Michael Janßen">
-    <meta name="DC.publisher" content="Michael Janßen">
+    <meta name="DC.subject" content="Internationales Handballturnier in Norddeutschand">
+    <meta name="DC.descripion" content="Termine, Anmeldung und Information">
+    <meta name="DC.publisher" content="Gunnar Dibbern">
     <meta name="DC.type" content="service">
     <meta name="DC.format" content="text/html">
     <meta name="DC.language" content="de">
     <meta name="DC.rights" content="Copyright by Finn Lorbeer">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="keywords" content="Arzt, Allgemeinmediziner, Berlin, Neukölln, Hausarzt">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jugendhandballturnier Elbemasters in Winsen an der Luhe
+    <meta name="keywords" content="Handball, Turnier, Handballturnier, Winsen, Elbemasters, Jugend">
+    <title>Elbemasters Jugendhandballturnier in Winsen an der Luhe
     </title>
     <style type="text/css">@import "bootstrap.css"; </style>
 </head>
@@ -27,7 +28,7 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed pull-left"
-                        style="margin-left:10px; border:0" data-toggle="collapse" data-target="#navbar"
+                        style="margin-left:10px; border:0" data-toggle="collapse" data-target="#navbar-collapse"
                         aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -37,21 +38,14 @@
                 <img class="center-block" style="margin:10px 5px" height="30px" href="#"
                      src="images/logo.gif" alt="Grafik">
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#praxis" aria-controls="praxis" role="tab"
-                                          data-toggle="tab">Elbemasters</a></li>
-                    <li><a href="#leistungsspektrum">Teilnahme</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                           aria-haspopup="true" aria-expanded="false">Programm<span
-                                class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Programmheft</a></li>
-                            <li><a href="#">Gruppeneinteilungen</a></li>
-                            <li><a href="#">Spielergebnisse</a></li>
-                        </ul>
-                    </li>
+                    <li class="active"><a href="#">Elbemasters</a></li>
+                    <li><a href="teilnahme.html">Teilnahme</a></li>
+                    <li><a href="programm.html">Programm</a></li>
+                    <li><a href="gruppen.html">Gruppen</a></li>
+                    <li><a href="#">Ergebnisse</a></li>
+                    <li><a href="#kontakt">Archiv</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                            aria-haspopup="true" aria-expanded="false">Kontakt<span class="caret"></span></a>
@@ -70,7 +64,6 @@
                             <li><a href="#">Links</a></li>
                         </ul>
                     </li>
-                    <li><a href="#kontakt">vergangene Turniere</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -78,29 +71,25 @@
     </nav>
 
     <!-- carousel -->
-    <div class="row">
+    <div class="row navbarmargin">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="images/image_1.JPG" alt="Grafik" width="100%">
+                    <img src="images/bg1.jpg" alt="Grafik" width="100%">
                 </div>
                 <div class="item">
-                    <img src="images/image_2.JPG" alt="Grafik" width="100%">
+                    <img src="images/bg2.jpg" alt="Grafik" width="100%">
                 </div>
                 <div class="item">
-                    <img src="images/image_3.JPG" alt="Grafik" width="100%">
-                </div>
-                <div class="item">
-                    <img src="images/image_5.JPG" alt="Grafik" width="100%">
+                    <img src="images/bg3.jpg" alt="Grafik" width="100%">
                 </div>
             </div>
 
@@ -118,81 +107,74 @@
         </div>
     </div>
 
-
     <!-- Jumbotron -->
-    <div class="row" style="margin-top:20px;">
-        <div class="col-md-2 text-center">
-            <img class="hidden-xs hidden-sm" src="images/wirleben_logo.png" alt="Grafik" style="margin-top:150px; max-height:100px; max-width:100%;">
-            <img class="hidden-md hidden-lg" src="images/wirleben_logo.png" alt="Grafik" style="max-height:100px;">
-        </div>
-        <div class="col-md-8">
-            <div class="jumbotron">
+    <div class="row">
+        <div class="jumbotron">
+            <div class="container">
                 <h1>Willkommen zum Elbemasters!</h1>
-                <br>
-                <h3>16. internationales Jugendhandballturnier</h3>
-                <br>
-                <p>Das Team des "wir leben" Elbemasters hei&szlig;t euch herzlich Willkommen!
-                    <br>
-                    <br>In der Zeit vom 13.05. - 16.05.2016
+                <p>17. internationales Jugendhandballturnier vom 02. bis 05. Juni 2017</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Willkommen -->
+    <div class="row">
+        <div class="col-md-2 col-sm-2 hidden-xs text-center">
+            <img src="images/wirleben_banner.jpg" alt="Grafik" style="margin-bottom: 20px;">
+        </div>
+        <div class="col-md-8 col-sm-10 col-xs-10">
+            <div class="jumbotron" style="background-color:white;">
+                <h2>Das Team des "wir leben" Elbemasters hei&szlig;t euch herzlich Willkommen!</h2>
+                <p>
+                    In der Zeit vom 02.06. - 05.06.2017
                     werden sich wieder zahlreiche Mannschaften in Winsen zu einem sportlichen Vergleich treffen.
-                    Für diese im Umkreis einzigartige Jugend-Sportveranstaltung wünschen wir, dass neben fairen
+                    Für diese in Norddeutschland einzigartige Jugend-Sportveranstaltung wünschen wir, dass neben fairen
                     und sportlichen Wettkämpfen Zeit und Gelegenheit vorhanden ist, viele Kontakte zu knüpfen.
                     <br><br>Teilnehmern und Gästen wünschen wir spannende Wettkämpfe und einen angenehmen
                     Aufenthalt.
                     <br>Mögen sie vier schöne und ereignisreiche Tage in Winsen verbringen.
-                    <br><br>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">zur Teilnahme</a></p>
+                </p>
             </div>
         </div><!-- /col-md-8 -->
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-12 col-xs-12 text-center" style="margin-bottom:20px;">
 
-            <!-- social media buttons L -->
-            <div class="text-center">
-                <div class="btn-group-vertical hidden-xs hidden-sm" role="group" style="margin-top:150px;">
+            <div class="row">
+                <div class="col-md-12 col-sm-3 col-xs-3">
                     <button type="button" class="btn btn-default"><a href="#"><img class="media-object" style="height:40px;"
                                                                                    src="images/facebook_icon.jpg" alt="..."></a>
                     </button>
+                </div>
+                <div class="col-md-12 col-sm-3 col-xs-3">
                     <button type="button" class="btn btn-default"><a href="#"><img class="media-object" style="height:40px;"
                                                                                    src="images/instagram_icon.jpg" alt="..."></a>
                     </button>
+                </div>
+                <div class="col-md-12 col-sm-3 col-xs-3">
                     <button type="button" class="btn btn-default"><a href="#"><img class="media-object" style="height:40px;"
                                                                                    src="images/twitter_icon.jpg" alt="..."></a>
                     </button>
+                </div>
+                <div class="col-md-12 col-sm-3 col-xs-3">
                     <button type="button" class="btn btn-default"><a href="#"><img class="media-object" style="height:40px;"
-                                                                                   src="images/pinterest.ico" alt="..."></a></button>
+                                                                                   src="images/pinterest.ico" alt="..."></a>
+                    </button>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- social media buttons S/M -->
-            <div class="btn-group hidden-md hidden-lg" role="group">
-                <hr noshade="noshade">
-                <div class="text-center">
-                    <button type="button" class="btn btn-default"><a href="#"><img class="media-object" style="height:40px;"
-                                                                                   src="images/facebook_icon.jpg" alt="..."></a>
-                    </button>
-                    <button type="button" class="btn btn-default"><a href="#"><img class="media-object" style="height:40px;"
-                                                                                   src="images/instagram_icon.jpg" alt="..."></a>
-                    </button>
-                    <button type="button" class="btn btn-default"><a href="#"><img class="media-object" style="height:40px;"
-                                                                                   src="images/twitter_icon.jpg" alt="..."></a>
-                    </button>
-                    <button type="button" class="btn btn-default"><a href="#"><img class="media-object" style="height:40px;"
-                                                                                   src="images/pinterest.ico" alt="..."></a></button>
-                </div>
-                <hr noshade="noshade">
-            </div>
-
+    <!-- Link zur Teilnahme -->
+    <div class="row">
+        <div class="jumbotron text-center">
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Hier geht es zur Teilnahme</a></p>
         </div>
     </div>
 
     <!-- Wir leben Handball -->
-
     <div class="row">
-        <div class="col-md-12">
-            <section class="bg-1 text-center">
-                <h1>Wir leben Handball!</h1>
-            </section>
-        </div>
+        <section class="bg-1 text-center">
+            <h1>Wir leben Handball!</h1>
+        </section>
     </div>
     <div class="row">
         <div class="container">
@@ -202,24 +184,22 @@
                     Während das Elbemasters ein Saisonabschlussturnier ist, achten wir in jedem Jahr darauf Mannschaten aus allen Leistungsstufen
                     zueinander
                     zu bringen.
-                    In den letzten Jahren konnten wir neben der litauischen Mannschaft Ula Varena und HT Siek aus den Niederlanden in der weiblichen
-                    Jugend
-                    mit dem HC Leipzig
-                    sogar einen amtierenden deutschen Meister bei uns begrüßen.
+                    In den letzten Jahren konnten wir neben der erfolgriechen litauischen Mannschaft Ula Varena und Favourit HT Siek aus den
+                    Niederlanden in der weiblichen Jugend mit dem HC Leipzig sogar einen amtierenden deutschen Meister bei uns begrüßen.
                 </p>
 
                 <h3>Hier gibts dazu die wichtigsten Termine hier im Überblick</h3>
                 <table class="table table-hover table-responsive" style="margin-top:20px;">
                     <tbody>
                     <tr>
-                        <td>xx.xx.2016</td>
+                        <td>xx.xx.2017</td>
                         <td></td>
                         <td>Anmeldeschluss</td>
                         <td>Bis zu diesem Tag solltet ihr euch bei uns gemeldet haben.
                         </td>
                     </tr>
                     <tr>
-                        <td>22.04.2016</td>
+                        <td>xx.xx.2017</td>
                         <td></td>
                         <td>"Zahltag"</td>
                         <td>Bis zu diesem Tag sollte die komplette Teilnehmergebühr auf dem Konto des JHV
@@ -227,19 +207,19 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>13.05.2016</td>
+                        <td>02.05.2017</td>
                         <td>ab 18 Uhr</td>
                         <td>Anreisetag</td>
                         <td>eventuell ab ca. 19 Uhr erste Spiele</td>
                     </tr>
                     <tr>
-                        <td>14./15.05.2016</td>
+                        <td>03./04.05.2016</td>
                         <td>(Pfingsten)</td>
                         <td>Spiele</td>
-                        <td>16. Elbemasters 2016</td>
+                        <td>17. Elbemasters 2017</td>
                     </tr>
                     <tr>
-                        <td>16.05.2016</td>
+                        <td>05.05.2016</td>
                         <td>(Pfingstmontag)</td>
                         <td>Endspiele</td>
                         <td>(bis ca. 15 Uhr) und Abreisetag</td>
@@ -251,13 +231,10 @@
     </div>
 
     <!-- Rahmenprogramm -->
-
     <div class="row">
-        <div class="col-md-12">
-            <section class="bg-2 text-center">
-                <h1>The Show Must Go On</h1>
-            </section>
-        </div>
+        <section class="bg-2 text-center">
+            <h1>Mehr als nur Spiele</h1>
+        </section>
     </div>
     <div class="row">
         <div class="container">
@@ -267,26 +244,75 @@
                     Neben einem attraktiven Handballturnier mit mindestens 4 Spielen pro Mannschaft, bieten wir
                     ein umfangreiches Freizeitangebot kostenlos an.
                     <br>
-                    Nach einem anstrengenden ersten oder zweiten Spieltag kann man zum ausgleich ins naheliegende Freizeitbad "die Insel". Am Abend
-                    beitet die Disco „Players Night Platz und Atmosphäre, sich auch abseits des Spielgeschehens näher zu kommen.
-                    <br> Und damit die Trainer sich nicht langeweilen, gibt es immer etwas Klönschnack im Festzelt.
-                    <br>
+                    Nach einem anstrengenden ersten oder zweiten Spieltag kann man zum Ausgleich ins naheliegende Freizeitbad "die Insel". Am Abend
+                    bietet die Disco „Players Night" Platz und Atmosphäre, sich auch abseits des Spielgeschehens näher zu kommen.
+                    <br> Und damit die Trainer sich nicht langeweilen, gibt es immer etwas Klönschnack im Festzelt :)
+                    <br><br>
                     Außerdem ist im Preis die Unterbringung in Klassenräumen und die Verpflegung enthalten.
-                    Imbisse zu vernünftigen Preisen stehen wie immer zur Verfügung.
+                    Auch für einen kleinen Imbiss zum vernünftigen Preis ist wie immer gesorgt.
                 </p>
             </div>
         </div>
     </div>
 
+    <!-- Sponsoren -->
+    <div class="row">
+        <section class="bg-3 text-center">
+            <h1>Elbemasters wird gefördert durch</h1>
+            <div class="col-md-12 text-center"><img class="img-rounded" style="height:180px; margin-top:20px" src="images/sponsor/wirleben.png"></div>
+        </section>
+    </div>
+    <div class="row text-center">
+        <h2>und unsere Partner</h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 col-xs-6 text-center"><img class="sponsor__img" src="images/sponsor/allianz_website.png"></div>
+        <div class="col-sm-2 col-xs-6  text-center"><img class="sponsor__img" src="images/sponsor/baesecke.png"></div>
+        <div class="col-sm-2 col-xs-6  text-center"><img class="sponsor__img" src="images/sponsor/BEHR_B2C_Logo_Gemuesegarten.jpg"></div>
+        <div class="col-sm-2 col-xs-6  text-center"><img class="sponsor__img" src="images/sponsor/besamex_Logo_2015_Claim.png"></div>
+        <div class="col-sm-2 col-xs-6  text-center"><img class="sponsor__img" src="images/sponsor/Dogan_Schild.png"></div>
+        <div class="col-sm-2 col-xs-6  text-center"><img class="sponsor__img" src="images/sponsor/fundus_logo.png"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 col-xs-6  text-center"><img class="sponsor__img" src="images/sponsor/gebr_ulmann_indiziert_ohneKreis.png"></div>
+        <div class="col-sm-2 col-xs-6  text-center"><img class="sponsor__img" src="images/sponsor/harms_logo.png"></div>
+        <div class="col-sm-2 col-xs-6  text-center"><img class="sponsor__img" src="images/sponsor/nb_Logo_klein.png"></div>
+        <div class="col-sm-2 col-xs-6  text-center"><img class="sponsor__img" src="images/sponsor/sportline_duwe_logo_klein.jpg"></div>
+        <div class="col-sm-2 col-xs-6  text-center"><img class="sponsor__img" src="images/sponsor/stadtwerke.png"></div>
+        <div class="col-sm-2 col-xs-6  text-center"><img class="sponsor__img" src="images/sponsor/winsen.png"></div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="jumbotron" style="margin-top: 40px; background-color:white;">
+                <p>
+                    Wir bedanken uns bei unseren Partnern, ohne die Elbemasters in dieser Form nicht möglich wäre.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link zur Teilnahme -->
+    <div class="row">
+        <div class="jumbotron text-center">
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Jetzt beim Elbemasters anmelden</a></p>
+        </div>
+    </div>
+
 </div>
-</body>
 
-<!-- JavaScript: Bootstrap and Google Analytics
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
+<!-- Footer -->
+<div class="container-fluid">
+    <div class="row">
+        <div id="footer">
+            <p class="text-muted" style="margin-left:20px; margin-right:20px;">JHV Winsen e.V | Ahornweg 9 | 21423 Winsen(Luhe) | Telefon: 0160-94 66 99 47
+                <a class="pull-right" href="mailto:info@elbemasters.de">info@elbemasters.de</a></p>
+        </div>
+    </div>
+</div></body>
+
+<!-- JavaScript ================================================== -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-
+<script src="bootstrap.min.js"></script>
 
 <!-- carousel speed -->
 <script type="text/javascript">
@@ -295,15 +321,31 @@
     });
 </script>
 
-<!-- navbar close on click -->
-<script type="text/javascript">
-    $('.nav a').on('click', function () {
-        $('.navbar-toggle').click()
-    });
+<!-- Parallax -->
+<script>
+    (function ($) {
+        $.fn.parallax = function (options) {
+            var windowHeight = $(window).height();
+            var settings = $.extend({
+                speed: 0.15
+            }, options);
+            return this.each(function () {
+                var $this = $(this);
+                $(document).scroll(function () {
+                    var scrollTop = $(window).scrollTop();
+                    var offset = $this.offset().top;
+                    var height = $this.outerHeight();
+                    if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
+                        return;
+                    }
+                    var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
+                    $this.css('background-position', 'center ' + yBgPosition + 'px');
+                });
+            });
+        }
+    }(jQuery));
+    $('.bg-1,.bg-3').parallax({speed: 0.15});
+    $('.bg-2').parallax({speed: 0.25});
 </script>
-
-
-
-
 
 </html>
