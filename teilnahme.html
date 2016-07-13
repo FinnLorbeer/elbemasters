@@ -41,7 +41,16 @@
             <div class="navbar-collapse collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Elbemasters</a></li>
-                    <li class="active"><a href="teilnahme.html">Teilnahme</a></li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false">Teilnahme<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="teilnahme.html">Informationen</a></li>
+                            <li><a href="#kontakt">Anmeldung</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Mannschaftsbereich</a></li>
+                        </ul>
+                    </li>
                     <li><a href="programm.html">Programm</a></li>
                     <li><a href="gruppen.html">Gruppen</a></li>
                     <li><a href="#">Ergebnisse</a></li>
@@ -73,8 +82,16 @@
     <!-- Link zur Teilnahme -->
     <div class="row navbarmargin">
         <div class="jumbotron">
-            <button type="button" class="btn btn-warning btn-lg btn-block" href="#" role="button">Jetzt anmelden</button>
-            <button type="button" class="btn btn-info btn-lg btn-block" href="#" role="button">zum Mannschaftsbereich</button>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-warning btn-lg btn-block" style="margin:10px;" href="#" role="button">Jetzt anmelden</button>
+                    </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-info btn-lg btn-block" style="margin:10px;" href="#" role="button">zum Mannschaftsbereich</button>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
         </div>
     </div>
 
@@ -181,7 +198,8 @@
 <div class="container-fluid">
     <div class="row">
         <div id="footer">
-            <p class="text-muted" style="margin-left:20px; margin-right:20px;">JHV Winsen e.V | Ahornweg 9 | 21423 Winsen(Luhe) | Telefon: 0160-94 66 99 47
+            <p class="text-muted" style="margin-left:20px; margin-right:20px;">JHV Winsen e.V | Ahornweg 9 | 21423 Winsen(Luhe) | Telefon: 0160-94 66
+                99 47
                 <a class="pull-right" href="mailto:info@elbemasters.de">info@elbemasters.de</a></p>
         </div>
     </div>
