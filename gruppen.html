@@ -41,7 +41,16 @@
             <div class="navbar-collapse collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Elbemasters</a></li>
-                    <li><a href="teilnahme.html">Teilnahme</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false">Teilnahme<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="teilnahme.html">Informationen</a></li>
+                            <li><a href="#kontakt">Anmeldung</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Mannschaftsbereich</a></li>
+                        </ul>
+                    </li>
                     <li><a href="programm.html">Programm</a></li>
                     <li class="active"><a href="gruppen.html">Gruppen</a></li>
                     <li><a href="#">Ergebnisse</a></li>
@@ -70,99 +79,391 @@
         </div>
     </nav>
 
-    <!-- Programmheft Download -->
+    <!-- Gruppeneinteilung -->
     <div class="row navbarmargin">
         <div class="container-fluid">
-            <h1>Gruppeneinteilung für 2016</h1>
+            <h1>Gruppeneinteilung für 2017</h1>
+            <hr>
         </div>
     </div>
-    <!-- A-Jugend -->
-    <div class="row">
-        <div class="col-md-1"></div>
-        <!-- WJA -->
-        <div class="col-md-5">
-            <h3>Weibliche Jugend A</h3>
 
-            <table class="table table-striped">
-                <tbody>
-                <tr>
-                    <td><a href="tabelle.php?class=mA&amp;group=A">Gruppe A</a></td>
-                    <td><a href="tabelle.php?class=mA&amp;group=B">Gruppe B</a></td>
-                </tr>
-                <tr>
-                    <td>Bredstedter TSV</td>
-                    <td>JMSG Braunschweig-Sickte</td>
+    <!-- Nav-Tabs -->
 
-                </tr>
-                <tr>
-                    <td>ATV Dorstfeld</td>
-                    <td>TV Brechten</td>
-
-                </tr>
-                <tr>
-                    <td>TuS Lübeck 1893</td>
-                    <td>HSG Störtal Hummeln</td>
-
-                </tr>
-                <tr>
-                    <td>HSV Wuppertal</td>
-                    <td>SG Todesfelde/Leezen</td>
-
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>HC Tura Bergkamen</td>
-                </tr>
-
-                </tbody>
-            </table>
-        </div>
-        <hr class="hidden-md hidden-lg">
-        <!-- MJA -->
-        <div class="col-md-5">
-            <h3>Männliche Jugend A</h3>
-
-            <table class="table table-striped">
-                <tbody>
-                <tr>
-                    <td><a href="tabelle.php?class=mA&amp;group=A">Gruppe A</a></td>
-                    <td><a href="tabelle.php?class=mA&amp;group=B">Gruppe B</a></td>
-                </tr>
-                <tr>
-                    <td>TV Brechten</td>
-                    <td>TV Beckum</td>
-
-                </tr>
-                <tr>
-                    <td>VfL Eintracht Mettingen</td>
-                    <td>SV Blankenese</td>
-
-                </tr>
-                <tr>
-                    <td>TuS Lübeck 1893</td>
-                    <td>HC Forchheim</td>
-
-                </tr>
-                <tr>
-                    <td>HT Norderstedt</td>
-                    <td>MTV Herzhorn</td>
-
-                </tr>
-                <tr>
-                    <td>HSV Wuppertal</td>
-                    <td>SuS Oberaden</td>
-
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>HG Winsen</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="col-md-1"></div>
-
+    <div class="container">
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+            <li role="presentation" class="active"><a href="#WJA" aria-controls="WJA" role="tab"
+                                                      data-toggle="tab">weibliche A-Jugend</a></li>
+            <li role="presentation"><a href="#MJA" aria-controls="MJA" role="tab" data-toggle="tab">männliche A-Jugend</a>
+            </li>
+            <li role="presentation"><a href="#WJB" aria-controls="WJB" role="tab" data-toggle="tab">weibliche B-Jugend</a>
+            </li>
+            <li role="presentation"><a href="#MJB" aria-controls="MJB" role="tab" data-toggle="tab">männliche B-Jugend</a>
+            </li>
+            <li role="presentation"><a href="#WJC" aria-controls="WJC" role="tab" data-toggle="tab">weibliche C-Jugend</a>
+            </li>
+            <li role="presentation"><a href="#MJC" aria-controls="MJC" role="tab" data-toggle="tab">männliche C-Jugend</a>
+            </li>
+        </ul>
     </div>
+
+    <!-- Tab panes -->
+    <div class="row-fluid" style="margin-top: 20px;">
+        <div class="container">
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="WJA">
+                    <div class="row">
+                        <!-- WJA Gruppe A -->
+                        <div class="col-md-6">
+                            <table class="table table-striped">
+                                <tbody>
+                                <tr>
+                                    <td><b><a href="tabelle.php?class=mA&amp;group=A">Gruppe A</a></b></td>
+                                </tr>
+                                <tr>
+                                    <td>Bredstedter TSV</td>
+                                </tr>
+                                <tr>
+                                    <td>ATV Dorstfeld</td>
+                                </tr>
+                                <tr>
+                                    <td>TuS Lübeck 1893</td>
+                                </tr>
+                                <tr>
+                                    <td>HSV Wuppertal</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- WJA Gruppe B -->
+                        <div class="col-md-6">
+                            <table class="table table-striped">
+                                <tbody>
+                                <tr>
+                                    <td><b><a href="tabelle.php?class=mA&amp;group=B">Gruppe B</a></b></td>
+                                </tr>
+                                <tr>
+                                    <td>JMSG Braunschweig-Sickte</td>
+                                </tr>
+                                <tr>
+                                    <td>TV Brechten</td>
+                                </tr>
+                                <tr>
+                                    <td>HSG Störtal Hummeln</td>
+                                </tr>
+                                <tr>
+                                    <td>SG Todesfelde/Leezen</td>
+                                </tr>
+                                <tr>
+                                    <td>HC Tura Bergkamen</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="MJA">
+                    <div class="row">
+                        <!-- MJA Gruppe A -->
+                        <div class="col-md-6">
+                            <table class="table table-striped">
+                                <tbody>
+                                <tr>
+                                    <td><b><a href="tabelle.php?class=mA&amp;group=A">Gruppe A</a></b></td>
+                                </tr>
+                                <tr>
+                                    <td>TV Brechten</td>
+                                </tr>
+                                <tr>
+                                    <td>VfL Eintracht Mettingen</td>
+                                </tr>
+                                <tr>
+                                    <td>TuS Lübeck 1893</td>
+                                </tr>
+                                <tr>
+                                    <td>HT Norderstedt</td>
+                                </tr>
+                                <tr>
+                                    <td>HSV Wuppertal</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- MJA Gruppe B -->
+                        <div class="col-md-6">
+                            <table class="table table-striped">
+                                <tbody>
+                                <tr>
+                                    <td><b><a href="tabelle.php?class=mA&amp;group=B">Gruppe B</a></b></td>
+                                </tr>
+                                <tr>
+                                    <td>TV Beckum</td>
+                                </tr>
+                                <tr>
+                                    <td>SV Blankenese</td>
+                                </tr>
+                                <tr>
+                                    <td>HC Forchheim</td>
+                                </tr>
+                                <tr>
+                                    <td>MTV Herzhorn</td>
+                                </tr>
+                                <tr>
+                                    <td>SuS Oberaden</td>
+                                </tr>
+                                <tr>
+                                    <td>HG Winsen</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="WJB">
+                    <div class="row">
+                        <!-- WJB Gruppe A -->
+                        <div class="col-md-6">
+                            <table class="table table-striped">
+                                <tbody>
+                                <tr>
+                                    <td><b><a href="tabelle.php?class=mA&amp;group=A">Gruppe A</a></b></td>
+                                </tr>
+                                <tr>
+                                    <td>Bredstedter TSV</td>
+                                </tr>
+                                <tr>
+                                    <td>ATV Dorstfeld</td>
+                                </tr>
+                                <tr>
+                                    <td>Vfl Eintracht Mettingen</td>
+                                </tr>
+                                <tr>
+                                    <td>HG Winsen</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- WJB Gruppe B -->
+                        <div class="col-md-6">
+                            <table class="table table-striped">
+                                <tbody>
+                                <tr>
+                                    <td><b><a href="tabelle.php?class=mA&amp;group=B">Gruppe B</a></b></td>
+                                </tr>
+                                <tr>
+                                    <td>TV Beckum</td>
+                                </tr>
+                                <tr>
+                                    <td>SG Luhdorf/Scharmbeck</td>
+                                </tr>
+                                <tr>
+                                    <td>HSG Seevetal</td>
+                                </tr>
+                                <tr>
+                                    <td>SG Todesfelde/Leezen</td>
+                                </tr>
+                                <tr>
+                                    <td>HSV Wuppertal</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="MJB">
+                    <div class="row">
+                        <!-- MJB Gruppe A -->
+                        <div class="col-md-6">
+                            <table class="table table-striped">
+                                <tbody>
+                                <tr>
+                                    <td><b><a href="tabelle.php?class=mA&amp;group=A">Gruppe A</a></b></td>
+                                </tr>
+                                <tr>
+                                    <td>ATV Dorstfeld</td>
+                                </tr>
+                                <tr>
+                                    <td>Lauenburger SV</td>
+                                </tr>
+                                <tr>
+                                    <td>ULA Varena 2 (Litauen)</td>
+                                </tr>
+                                <tr>
+                                    <td>HG Winsen</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- MJB Gruppe B -->
+                        <div class="col-md-6">
+                            <table class="table table-striped">
+                                <tbody>
+                                <tr>
+                                    <td><b><a href="tabelle.php?class=mA&amp;group=B">Gruppe B</a></b></td>
+                                </tr>
+                                <tr>
+                                    <td>Vfl Eintracht Mettingen</td>
+                                </tr>
+                                <tr>
+                                    <td>SG Luhdorf/Scharmbeck</td>
+                                </tr>
+                                <tr>
+                                    <td>HSG Störtal Hummeln</td>
+                                </tr>
+                                <tr>
+                                    <td>ULA Varena 1 (Litauen)</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- MJB Gruppe C -->
+                        <div class="col-md-6">
+                            <table class="table table-striped">
+                                <tbody>
+                                <tr>
+                                    <td><b><a href="tabelle.php?class=mA&amp;group=C">Gruppe C</a></b></td>
+                                </tr>
+                                <tr>
+                                    <td>TV Beckum</td>
+                                </tr>
+                                <tr>
+                                    <td>SV Blankenese</td>
+                                </tr>
+                                <tr>
+                                    <td>Bredstedter TSV</td>
+                                </tr>
+                                <tr>
+                                    <td>HT Siek Junior (Niederlande)</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="WJC">
+                    <div class="row">
+                        <!-- WJC Gruppe A -->
+                        <div class="col-md-6">
+                            <table class="table table-striped">
+                                <tbody>
+                                <tr>
+                                    <td><b><a href="tabelle.php?class=mA&amp;group=A">Gruppe A</a></b></td>
+                                </tr>
+                                <tr>
+                                    <td>Bredstedter TSV</td>
+                                </tr>
+                                <tr>
+                                    <td>ATV Dorstfeld</td>
+                                </tr>
+                                <tr>
+                                    <td>TuS Lübeck 1893</td>
+                                </tr>
+                                <tr>
+                                    <td>HSV Wuppertal</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- WJC Gruppe B -->
+                        <div class="col-md-6">
+                            <table class="table table-striped">
+                                <tbody>
+                                <tr>
+                                    <td><b><a href="tabelle.php?class=mA&amp;group=B">Gruppe B</a></b></td>
+                                </tr>
+                                <tr>
+                                    <td>JMSG Braunschweig-Sickte</td>
+                                </tr>
+                                <tr>
+                                    <td>TV Brechten</td>
+                                </tr>
+                                <tr>
+                                    <td>HSG Störtal Hummeln</td>
+                                </tr>
+                                <tr>
+                                    <td>SG Todesfelde/Leezen</td>
+                                </tr>
+                                <tr>
+                                    <td>HC Tura Bergkamen</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="MJC">
+                    <div class="row">
+                        <!-- MJC Gruppe A -->
+                        <div class="col-md-6">
+                            <table class="table table-striped">
+                                <tbody>
+                                <tr>
+                                    <td><b><a href="tabelle.php?class=mA&amp;group=A">Gruppe A</a></b></td>
+                                </tr>
+                                <tr>
+                                    <td>Bredstedter TSV</td>
+                                </tr>
+                                <tr>
+                                    <td>ATV Dorstfeld</td>
+                                </tr>
+                                <tr>
+                                    <td>TuS Lübeck 1893</td>
+                                </tr>
+                                <tr>
+                                    <td>HSV Wuppertal</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- MJC Gruppe B -->
+                        <div class="col-md-6">
+                            <table class="table table-striped">
+                                <tbody>
+                                <tr>
+                                    <td><b><a href="tabelle.php?class=mA&amp;group=B">Gruppe B</a></b></td>
+                                </tr>
+                                <tr>
+                                    <td>JMSG Braunschweig-Sickte</td>
+                                </tr>
+                                <tr>
+                                    <td>TV Brechten</td>
+                                </tr>
+                                <tr>
+                                    <td>HSG Störtal Hummeln</td>
+                                </tr>
+                                <tr>
+                                    <td>SG Todesfelde/Leezen</td>
+                                </tr>
+                                <tr>
+                                    <td>HC Tura Bergkamen</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 </div>
